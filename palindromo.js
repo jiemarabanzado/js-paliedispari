@@ -27,7 +27,6 @@ function Controlla(content){
             alert('inserisci parola');
         }
 }
-
 document.getElementById('getPalindrom').addEventListener('click',function(){
     let Parola=document.getElementById('Palindrom').value;
     Controlla(Parola);

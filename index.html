@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+    <section id="ExerciseChoice">
+        <div>Scegli l'esercizio</div>
+        <div>
+            <button id="Palindromo">Palindromi</button>
+            <button id="OddOrEven">Pari o Dispari</button>
+        </div>
+    </section>
     <section id="Ex-palindrom">
         <div id="title-ex1">Inserisci una parola</div>
         <input type="text" id="Palindrom">
@@ -16,9 +23,27 @@
             <!--risultati ex 1-->
         </div>
     </section>
-        
+    <section id="Ex-OddOrEven">
+        <div id="title">Fa la tua scelta</div>
+        <div class="chose">
+            <div>
+                <button id="Even">Pari</button>
+            </div>
+            <div id="or">o</div>
+            <div>
+                <button id="Odd">Dispari</button>
+            </div>
+        </div>
+        <div class="number hide">
+            scegli un numero tra 1-5
+            <input type="text" id="number">
+            <button id="NumberChoice">Invia</button>
+        </div>
 
+    </section>
 
-    <script src="main.js"></script>
+    <script src="choice.js"></script>
+    <script src="palindromo.js"></script>
+    <script src="oddoreven.js"></script>
 </body>
 </html>
