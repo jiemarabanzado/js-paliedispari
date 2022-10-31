@@ -10,3 +10,30 @@
 #Ex-OddOrEven{
     display: none;
 }
+
+/*choice styling*/
+#ExerciseChoice{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+#Palindromo{
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#Palindromo:hover{
+    text-decoration: underline;
+}
+#OddOrEven{
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#OddOrEven:hover{
+    text-decoration: underline;
+}
