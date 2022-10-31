@@ -1,13 +1,13 @@
 let scelta=0;
 document.getElementById('Even').addEventListener('click',function(){
     scelta=2;
-    document.querySelector('.chose').classList.add('hide');
+    document.getElementById('chose').style.display='none';
     document.getElementById('title').style.display='none';
     document.querySelector('.number').classList.remove('hide');
 })
 document.getElementById('Odd').addEventListener('click',function(){
     scelta=1;
-    document.querySelector('.chose').classList.add('hide');
+    document.getElementById('chose').style.display='none';
     document.getElementById('title').style.display='none';
     document.querySelector('.number').classList.remove('hide');
 })
@@ -24,17 +24,23 @@ document.getElementById('NumberChoice').addEventListener('click',function(){
         console.log(cpu);
         somma=cpu+number;
         console.log(somma);
+        let result=document.getElementById('result');
         if(somma%2==0){
             if(scelta==2){
                 console.log('hai vinto');
+                result.innerHTML+=`<div>la cpu ha scelto ${cpu} la somma è ${somma} hai vinto!!</div>`
+
             }else{
                 console.log('hai perso')
+                result.innerHTML+=`<div>la cpu ha scelto ${cpu} la somma è ${somma} hai perso!!</div>`
             }
         }else if(somma%2==1){
             if(scelta==2){
                 console.log('hai perso');
+                result.innerHTML+=`<div>la cpu ha scelto ${cpu} la somma è ${somma} hai perso!!</div>`
             }else {
                 console.log('hai vinto');
+                result.innerHTML+=`<div>la cpu ha scelto ${cpu} la somma è ${somma} hai vinto!!</div>`
             }
         }
     }else{

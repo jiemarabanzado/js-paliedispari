@@ -17,11 +17,12 @@ function Controlla(content){
                     }else{
                         ItIs=false;
                 }
-            } 
-            if(ItIs){
-                document.getElementById('caracters-Ex1').innerHTML+=`<div>${content} è palindromo</div>`;
+            }
+            let convert=Control.toString(); 
+            if(ItIs){ 
+                document.getElementById('caracters-Ex1').innerHTML+=`<div><span>${convert}</span> è palindromo</div>`;
                 }else{
-                document.getElementById('caracters-Ex1').innerHTML+=`<div>${content} non è palindromo</div>`;
+                document.getElementById('caracters-Ex1').innerHTML+=`<div><span>${convert}</span> non è palindromo</div>`;
             }  
         }else{
             alert('inserisci parola');

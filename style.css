@@ -1,9 +1,3 @@
-#Ex-palindrom{
-    display: none;
-}
-.chose{
-    display: flex;
-}
 .hide{
     display: none;
 }
@@ -36,4 +30,29 @@
 }
 #OddOrEven:hover{
     text-decoration: underline;
+}
+/*esercizio palindromi*/
+#Ex-palindrom{
+    display: none;
+    text-align: center;
+}
+span{
+    font-size: 2rem;
+}
+/*esercizio pari o dispari*/
+#Ex-OddOrEven{
+    padding-top: 50px;
+    text-align: center;
+}
+#chose{
+    display: flex;
+    justify-content: center;
+}
+#Even{
+    margin-right: 10px;
+    font-size: 2rem;
+}
+#Odd{
+    margin-left: 10px;
+    font-size: 2rem;
 }
